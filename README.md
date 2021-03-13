@@ -28,10 +28,12 @@ This gives us four core elements to work with throughout the rest of this tutori
 3. Committed Snapshots
 4. Development Branches
 
-In Git, a branch is an independent line of development.
-First, Branches present an error-proof method for incorporating changes from an experiment.
-Second, they let you store all of your experiments in a single directory, which makes it much easier to keep track of them and to share them with others.
-Branches also lend themselves to several standardized workflows for both individual and colaborative development, which will b explored in the latter half of the tutorial.
+**In Git, a branch is an independent line of development**.
+
+1. First, Branches present an error-proof method for incorporating changes from an experiment.
+2. Second, they let you store all of your experiments in a single directory, which makes it much easier to keep track of them and to share them with others.
+
+Branches also lend themselves to several standardized workflows for both individual and colaborative development, which will be explored in the latter half of the tutorial.
 
 # 	* [View existing Branches](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
@@ -42,7 +44,7 @@ $ git branch
 * master
 ```
 
-This will display our one and only branch: * master.
+This will display our one and only branch: `* master`.
 The master branch is Git's default branch, and the asterisk next to it tell us that it is currently checked out.
 This means that the most recent snapshot in the master branch resides in the working directory.
 
@@ -71,7 +73,7 @@ Check out the crazy experiment from the last module, remembering to change
 $ git checkout 12e24f0
 ```
 
-This command returns a message that says we are in a **detached HEAD state** and that the **HEAD** is git's internal way of indicating the snapshot that is currently checked out.
+**This command returns a message that says we are in a detached HEAD state and that the HEAD is git's internal way of indicating the snapshot that is currently checked out**.
 
 ```console
 HEAD detached at 12e24f0
@@ -83,9 +85,9 @@ The following figure shows the state of our repository before and after we check
 
 ![Screen Shot 2020-05-23 at 8 25 18](https://user-images.githubusercontent.com/24994818/82731820-f7094f80-9cce-11ea-99d3-31959c7ce556.png)
 
-As shown in the "before" diagram, the **HEAD** normally resides on the tip of a development branch, But when we checked out the previous commit, the **HEAD** moved to the middle of the branch.
-We can no longer say we are on the **master** branch since it contains more recent snapshots than the **HEAD**.
-This is reflected in the **git branch** output, which tells us that we are currently on (no branch)
+**As shown in the "before" diagram, the HEAD normally resides on the tip of a development branch, But when we checked out the previous commit, the HEAD moved to the middle of the branch**.
+We can no longer say we are on the master branch since it contains more recent snapshots than the HEAD.
+This is reflected in the git branch output, which tells us that we are currently on (no branch)
 
 ```console
 $ git branch
@@ -119,17 +121,17 @@ $ git checkout crazy
 Switched to branch 'crazy'
 ```
 
-We are now free to experiment in the working directory without disturbing anything in the **master** branch.
-The **crazy** branch is a completely isolated development environment that can be visualized as the following:
+We are now free to experiment in the working directory without disturbing anything in the master branch.
+The crazy branch is a completely isolated development environment that can be visualized as the following:
 
 ![Screen Shot 2020-05-23 at 8 47 17](https://user-images.githubusercontent.com/24994818/82732309-08a02680-9cd2-11ea-9a98-de50000acc64.png)
 
-Right now, the crazy branch, **HEAD**, and working directory are the exact same as the fourth commit.
+Right now, the crazy branch, HEAD, and working directory are the exact same as the fourth commit.
 But as soon as we add another snapshot, we will see a fork in our project history.
 
 # 	* [Make a Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
-We will continue developing our crazy experiment by changing **crazy.html** to the following.
+We will continue developing our crazy experiment by changing crazy.html to the following.
 
 ```html
 <!DOCTYPE html>
@@ -178,8 +180,8 @@ $ git commit -m "add a rainbow to crazy.html"
 
 ![Screen Shot 2020-05-23 at 9 01 30](https://user-images.githubusercontent.com/24994818/82732641-03dc7200-9cd4-11ea-8d05-6d3d19922e60.png)
 
-Also notice that the **HEAD** (designated by the red circle) automatically moved forward to the new commit, which is intuitively what we would expect when developing a project.
-The above diagram represents the complete state of our repository, but **git log** only displays the history of the current branch:
+**Also notice that the HEAD (designated by the red circle) automatically moved forward to the new commit, which is intuitively what we would expect when developing a project**.
+The above diagram represents the complete state of our repository, but git log only displays the history of the current branch:
 
 ```console
 $ git log
@@ -214,7 +216,7 @@ Date:   Fri May 22 12:54:21 2020 -0500
     Create index page for the message
 ```
 
-Note that the history **before** the fork is considered part of the new branch (marked with asterisks above).
+**Note that the history before the fork is considered part of the new branch (marked with asterisks above)**.
 That is to say, the crazy history spans all the way back to the first commit.
 
 ![Screen Shot 2020-05-23 at 9 08 05](https://user-images.githubusercontent.com/24994818/82732774-f07dd680-9cd4-11ea-8454-50261fc15be0.png)
@@ -225,7 +227,7 @@ This means that we can interact with branches in the exact same way as we learne
 # 	* [Rename the Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 Let's add one more snapshot to the crazy branch.
-Rename **crazy.html to **rainbow.html, 
+Rename crazy.html to rainbow.html.: 
 
 ```console
 mv crazy.html rainbow.html
@@ -335,13 +337,13 @@ $ git checkout css
 Switched to branch 'css'
 ```
 
-The new branch points to the currently checked out snapshot, which happens to coincide with the **master branch**
+The new branch points to the currently checked out snapshot, which happens to coincide with the master branch
 
 ![Screen Shot 2020-05-24 at 8 44 44](https://user-images.githubusercontent.com/24994818/82755691-e1f9f280-9d9a-11ea-9b4c-d44f0d352cae.png)
 
 # 	* [Add a CSS Stylesheet](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
-Next, create a file called **style.css** with the following content.
+Next, create a file called style.css with the following content.
 This CSS is used to apply formatting to the HTML in our other files.
 
 ```css
@@ -372,7 +374,7 @@ $ git commit -m "Add CSS stylesheet"
 # 	* [Link the Stylesheet](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 We still need to tell the HTML pages to use the formatting in style.css.
-Add the following text on a separate line after the **title** element in **index.html**, **blue.html** and **orange.html** (remember that rainbow.html only exist in the crazy branch).
+Add the following text on a separate line after the title element in index.html, blue.html and orange.html (remember that rainbow.html only exist in the crazy branch).
 You should be able to see the CSS formatting by opening index.html in a web browser.
 
 ```html
@@ -419,7 +421,7 @@ This results in a repository history looks like:
 
 # 	* [Return to the Master Branch (again)](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
-The css branch let us create and test our formatting without threatening the stability of the **master branch**. But, new we need to merge these changes into the main project. Before we attempt the merge, we need to return to the master branch.
+The css branch let us create and test our formatting without threatening the stability of the master branch. But, new we need to merge these changes into the main project. Before we attempt the merge, we need to return to the master branch.
 
 ```console
 $ git checkout master
@@ -427,11 +429,11 @@ Switched to branch 'master'
 ```
 
 Verify that style.css does not exist and that HTML pages are not linked to it.
-Our repository history remains unchanged, but the working directory now matches the snapshot pointer to by the **master branch**.
+Our repository history remains unchanged, but the working directory now matches the snapshot pointer to by the master branch.
 
 ![Screen Shot 2020-05-24 at 9 27 38](https://user-images.githubusercontent.com/24994818/82756619-d6a9c580-9da0-11ea-9445-a23d899e9189.png)
 
-Take a look at the **git log --oneline** output as well.
+Take a look at the `git log --oneline` output as well.
 
 ```console
 $ git log --oneline
@@ -446,12 +448,12 @@ As expected, there is no mention of the CSS addition in the history of master, b
 
 # 	* [Merge the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
-Use the git **merge** command to take the snapshots from the **css** branch and add them to the **master** branch.
+Use the git merge command to take the snapshots from the css branch and add them to the master branch.
 
 ![Screen Shot 2020-05-24 at 9 38 10](https://user-images.githubusercontent.com/24994818/82756851-508e7e80-9da2-11ea-8c28-66833b9b5a21.png)
 
-Instead of re-creating the commits in css and adding them to the history of master, Git reuses the existing snapshots and simply moves the tip of **master** to match the tip of **css**.
-This kind of merge is called a **fast-forward merge**, since Git is **"fast-forwarding"** through the new commits in the **css** branch.
+Instead of re-creating the commits in css and adding them to the history of master, Git reuses the existing snapshots and simply moves the tip of master to match the tip of css.
+**This kind of merge is called a fast-forward merge, since Git is "fast-forwarding" through the new commits in the css branch**.
 
 
 After the merge, both branches have the exact same history, which makes them redundant.
@@ -466,7 +468,7 @@ $ git branch -d css
 Deleted branch css (was 1a27d0e).
 ```
 
-Since **css** and **master** represent the same branch, our history looks the same, though the **css** branch has been removed.
+Since css and master represent the same branch, our history looks the same, though the css branch has been removed.
 I have also put the master branch's commits in a straight line in the following visualization, making it easier to track during the upcoming modules.
 
 ```console
@@ -477,16 +479,16 @@ $ git branch
 
 ![Screen Shot 2020-05-24 at 11 12 51](https://user-images.githubusercontent.com/24994818/82758981-8be37a00-9daf-11ea-93a4-35e65b332800.png)
 
-Deleting branches is a relatively **"safe"** operation in the sense that Git will warn you if you are deleting a unmerged branch.
+**Deleting branches is a relatively "safe" operation in the sense that Git will warn you if you are deleting a unmerged branch**.
 This is just another example of Git's commitment to never losing your work.
 
 # 	* [Conclusion](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
-This module used two branches to experiment with new additions. In both cases, branches gave us an environment that was completely isolated from the **"Stable"** version of our website (the master branch). One of our experiments is waiting for us in the next module, while our CSS changes have been merged into the stable project, and its branch is thus obsolete. Using branches to develop small features like these is one of the hall-marks of Git-based software management.
+This module used two branches to experiment with new additions. In both cases, branches gave us an environment that was completely isolated from the "Stable" version of our website (the master branch). One of our experiments is waiting for us in the next module, while our CSS changes have been merged into the stable project, and its branch is thus obsolete. Using branches to develop small features like these is one of the hall-marks of Git-based software management.
 
 While this module relied heavily on branch diagrams to show the complete state of the repository, you don't need to keep this high-level overview in mind during your every day development. Creating a new branch is really just a way to request an independent working directory, staging snapshot, and history. You can think of branches as a way to multiply functionality presented in the first two module.
 
-Next, we will practice our branch management skills by examining the typical workflow of veteran Git users. We will also discover more complicated merges than the **fast-forward merge** introduced above.
+Next, we will practice our branch management skills by examining the typical workflow of veteran Git users. We will also discover more complicated merges than the fast-forward merge introduced above.
 
 # 	* [Quick Reference](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
@@ -497,25 +499,25 @@ $ git branch
 List all branches.
 
 ```console
-$ git branch branchName
+$ git branch <branchName>
 ```
 
 Create a new branch using the current working directory as its base.
 
 ```console
-git checkout <branchName>
+$ git checkout <branchName>
 ```
 
 Make the working directory and the HEAD match the specified branch.
 
-```consoole
-git merge <brachName>
+```console
+$ git merge <branchName>
 ```
 
 Merge a branch into the checked-out branch.
 
 ```console
-$ git branch -d <brachName>
+$ git branch -d <branchName>
 ```
 
 Delete branchName
