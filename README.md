@@ -23,19 +23,19 @@
 Branches are the final component of Git version control.
 This gives us four core elements to work with throughout the rest of this tutorial:
 
-	* The working directory
-	* The staged Snapshot
-	* Committed Snapshots
-	* Development Branches
+1. The working directory
+2. The staged Snapshot
+3. Committed Snapshots
+4. Development Branches
 
 In Git, a branch is an independent line of development.
 First, Branches present an error-proof method for incorporating changes from an experiment.
 Second, they let you store all of your experiments in a single directory, which makes it much easier to keep track of them and to share them with others.
-Branches also lend themselves to several standardized workflows for both individual and colavorative development, which will b explored in the latter half of the tutorial.
+Branches also lend themselves to several standardized workflows for both individual and colaborative development, which will b explored in the latter half of the tutorial.
 
 # 	* [View existing Branches](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
-Lets start our exploration by listing the existingg branches for our project
+Lets start our exploration by listing the existing branches for our project:
 
 ```console
 $ git branch
@@ -43,7 +43,7 @@ $ git branch
 ```
 
 This will display our one and only branch: * master.
-The master branch is Git's default branch, and the asterisk next to ir tell us that it is currently checked out.
+The master branch is Git's default branch, and the asterisk next to it tell us that it is currently checked out.
 This means that the most recent snapshot in the master branch resides in the working directory.
 
 ![Screen Shot 2020-05-23 at 8 09 49](https://user-images.githubusercontent.com/24994818/82731472-cde7bf80-9ccc-11ea-9029-32deb45c901f.png)
@@ -78,8 +78,8 @@ HEAD detached at 12e24f0
 nothing to commit, working tree clean
 ```
 
-This means the red circle in each of our history diagrams actually represets Git's HEAD.
-The followin figure shows the state of our repository before and after we checked out and old commit.
+This means the red circle in each of our history diagrams actually represents Git's HEAD.
+The following figure shows the state of our repository before and after we checked out and old commit.
 
 ![Screen Shot 2020-05-23 at 8 25 18](https://user-images.githubusercontent.com/24994818/82731820-f7094f80-9cce-11ea-99d3-31959c7ce556.png)
 
@@ -178,7 +178,7 @@ $ git commit -m "add a rainbow to crazy.html"
 
 ![Screen Shot 2020-05-23 at 9 01 30](https://user-images.githubusercontent.com/24994818/82732641-03dc7200-9cd4-11ea-8d05-6d3d19922e60.png)
 
-Also notice that the **HEAD** (designated by the red circle) automatically moved forward to the new commit, which is intutively what we would expect when developing a project.
+Also notice that the **HEAD** (designated by the red circle) automatically moved forward to the new commit, which is intuitively what we would expect when developing a project.
 The above diagram represents the complete state of our repository, but **git log** only displays the history of the current branch:
 
 ```console
@@ -231,7 +231,7 @@ Rename **crazy.html to **rainbow.html,
 mv crazy.html rainbow.html
 ```
 
-then use the following Git commands to update the repository
+Then use the following Git commands to update the repository
 
 ```console
 $ git status
@@ -253,7 +253,7 @@ $ git rm crazy.html
 rm 'crazy.html'
 ```
 
-the git rm command tells Git to stop tacking crazy.html (and delete it if necesarry), and git add starts tracking rainbow.html.
+the git rm command tells Git to stop tacking crazy.html (and delete it if necessary), and git add starts tracking rainbow.html.
 
 ```console
 $ git add rainbow.html
