@@ -102,7 +102,7 @@ This will take our current working directory and fork it into a new branch.
 $ git branch crazy
 ```
 
-print all branches
+Print all branches
 
 ```console
 $ git branch
@@ -253,7 +253,7 @@ $ git rm crazy.html
 rm 'crazy.html'
 ```
 
-the git rm command tells Git to stop tacking crazy.html (and delete it if necessary), and git add starts tracking rainbow.html.
+The git rm command tells Git to stop tacking crazy.html (and delete it if necessary), and git add starts tracking rainbow.html.
 
 ```console
 $ git add rainbow.html
@@ -295,7 +295,7 @@ Remember that the crazy branch does not include any commits in master after the 
 	
 # 	* [Return to the Master Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
-lets switch back to the master branch:
+Lets switch back to the master branch:
 
 ```console
 $ git checkout master
@@ -431,7 +431,7 @@ Our repository history remains unchanged, but the working directory now matches 
 
 ![Screen Shot 2020-05-24 at 9 27 38](https://user-images.githubusercontent.com/24994818/82756619-d6a9c580-9da0-11ea-9445-a23d899e9189.png)
 
-take a look at the **git log --oneline** output as well.
+Take a look at the **git log --oneline** output as well.
 
 ```console
 $ git log --oneline
