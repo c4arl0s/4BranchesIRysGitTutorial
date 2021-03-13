@@ -1,25 +1,24 @@
-# 4BranchesIRysGitTutorial
+# [go back to Content](https://github.com/c4arl0s/RysGitTutorial#rys-git-tutorial)
 
-4 Branches I Rys Git Tutorial
+# [4 Branches I Rys Git Tutorial - Content](https://github.com/c4arl0s/4BranchesIRysGitTutorial#go-back-to-content)
 
-# 4. [Branches I](https://github.com/c4arl0s/RysGitTutorial#4-branches-i)
- * [View existing Branches](https://github.com/c4arl0s/RysGitTutorial#-view-existing-branches)
- * [Checkout the Crazy Experiment](https://github.com/c4arl0s/RysGitTutorial#-checkout-the-crazy-experiment)
- * [Create a New Branch](https://github.com/c4arl0s/RysGitTutorial#-create-a-new-branch)
- * [Make a Rainbow](https://github.com/c4arl0s/RysGitTutorial#-make-a-rainbow)
- * [Stage and Commit the Rainbow](https://github.com/c4arl0s/RysGitTutorial#-stage-and-commit-the-rainbow)
- * [Rename the Rainbow](https://github.com/c4arl0s/RysGitTutorial#-rename-the-rainbow)
- * [Return to the Master Branch](https://github.com/c4arl0s/RysGitTutorial#-return-to-the-master-branch)
- * [Create a CSS Branch](https://github.com/c4arl0s/RysGitTutorial#-create-a-css-branch)
- * [Add a CSS Stylesheet](https://github.com/c4arl0s/RysGitTutorial#-add-a-css-stylesheet)
- * [Link the Stylesheet](https://github.com/c4arl0s/RysGitTutorial#-link-the-stylesheet)
- * [Return to the Master Branch (again)](https://github.com/c4arl0s/RysGitTutorial#-return-to-the-master-branch-again)
- * [Merge the CSS Branch](https://github.com/c4arl0s/RysGitTutorial#-merge-the-css-branch)
- * [Delete the CSS Branch](https://github.com/c4arl0s/RysGitTutorial#-delete-the-css-branch)
- * [Conclusion](https://github.com/c4arl0s/RysGitTutorial#-conclusion-2)
- * [Quick Reference](https://github.com/c4arl0s/RysGitTutorial#-quick-reference-1)
+ * [View existing Branches](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-view-existing-branches)
+ * [Checkout the Crazy Experiment](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-checkout-the-crazy-experiment)
+ * [Create a New Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-create-a-new-branch)
+ * [Make a Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-make-a-rainbow)
+ * [Stage and Commit the Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-stage-and-commit-the-rainbow)
+ * [Rename the Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-rename-the-rainbow)
+ * [Return to the Master Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-return-to-the-master-branch)
+ * [Create a CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-create-a-css-branch)
+ * [Add a CSS Stylesheet](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-add-a-css-stylesheet)
+ * [Link the Stylesheet](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-link-the-stylesheet)
+ * [Return to the Master Branch (again)](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-return-to-the-master-branch-again)
+ * [Merge the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-merge-the-css-branch)
+ * [Delete the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-delete-the-css-branch)
+ * [Conclusion](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-conclusion)
+ * [Quick Reference](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-quick-reference)
 
-# 4. [Branches I]()
+# [4 Branches I Rys Git Tutorial](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - Branches are the final component of Git version control.
 - This gives us four core elements to work with throughout the rest of this tutorial:
@@ -34,7 +33,7 @@
 - Second, they let you store all of your experiments in a single directory, which makes it much easier to keep track of them and to share them with others.
 - Branches also lend themselves to several standardized workflows for both individual and colavorative development, which will b explored in the latter half of the tutorial.
 
-# 	* [View existing Branches]()
+# 	* [View existing Branches](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - Lets start our exploration by listing the existingg branches for our project
 
@@ -51,7 +50,7 @@ $ git branch
 
 - Notice that since there is only one working directory for each project, only one branch can be checked out at a time.
 
-# 	* [Checkout the Crazy Experiment]()
+# 	* [Checkout the Crazy Experiment](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - The previous module left out some details about ho to checking out previous commits actually works.
 - We are now ready to tackle this topic in depth.
@@ -94,7 +93,7 @@ $ git branch
   master
 ```
 
-# 	* [Create a New Branch]()
+# 	* [Create a New Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - We can not add new commits when we are not on a branch, so let's create one now.
 - This will take our current working directory and fork it into a new branch.
@@ -128,7 +127,7 @@ Switched to branch 'crazy'
 - Right now, the crazy branch, **HEAD**, and working directory are the exact same as the fourth commit.
 - But as soon as we add another snapshot, we will see a fork in our project history.
 
-# 	* [Make a Rainbow]()
+# 	* [Make a Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - We will continue developing our crazy experiment by changing **crazy.html** to the following.
 
@@ -157,7 +156,7 @@ Switched to branch 'crazy'
 </html>
 ```
 
-# 	* [Stage and Commit the Rainbow]()
+# 	* [Stage and Commit the Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - Hopefully, you are relatively familiar with staging and committing snapshots by now:
 
@@ -223,13 +222,14 @@ Date:   Fri May 22 12:54:21 2020 -0500
 - The project as a whole now has a complex history, however, each individual branch still has a linear history (snapshots occur one after another).
 - This means that we can interact with branches in the exact same way as we learned in the first two modules.
 
-# 	* [Rename the Rainbow]()
+# 	* [Rename the Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - Let's add one more snapshot to the crazy branch.
 - Rename **crazy.html to **rainbow.html, 
 
 ```console
 mv crazy.html rainbow.html
+```
 
 - then use the following Git commands to update the repository
 
@@ -293,7 +293,7 @@ e1bc771 add a rainbow to crazy.html
 
 - Remember that the crazy branch does not include any commits in master after the fork.
 	
-# 	* [Return to the Master Branch]()
+# 	* [Return to the Master Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - lets switch back to the master branch:
 
@@ -317,7 +317,7 @@ $ git log --oneline
 
 ![Screen Shot 2020-05-23 at 11 37 52](https://user-images.githubusercontent.com/24994818/82735782-e0bcbd00-9ce9-11ea-9ccc-c6b53df0324c.png)
 
-# 	* [Create a CSS Branch]()
+# 	* [Create a CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - We are going to put our crazy experiment on the backburner for now and turn our attention to formatting the HTML pages with a cascading stylesheet (CSS).
 - Again, if you are not comfortable with HTML and CSS, the content of the upcoming files is not nearly as important as the Git commands used to manage them.
@@ -339,7 +339,7 @@ Switched to branch 'css'
 
 ![Screen Shot 2020-05-24 at 8 44 44](https://user-images.githubusercontent.com/24994818/82755691-e1f9f280-9d9a-11ea-9b4c-d44f0d352cae.png)
 
-# 	* [Add a CSS Stylesheet]()
+# 	* [Add a CSS Stylesheet](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - Next, create a file called **style.css** with the following content.
 - This CSS is used to apply formatting to the HTML in our other files.
@@ -369,7 +369,7 @@ $ git status
 $ git commit -m "Add CSS stylesheet"
 ```
 
-# 	* [Link the Stylesheet]()
+# 	* [Link the Stylesheet](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - We still need to tell the HTML pages to use the formatting in style.css.
 - Add the following text on a separate line after the **title** element in **index.html**, **blue.html** and **orange.html** (remember that rainbow.html only exist in the crazy branch).
@@ -417,7 +417,7 @@ $ git log --oneline
 
 ![Screen Shot 2020-05-24 at 8 44 44](https://user-images.githubusercontent.com/24994818/82755691-e1f9f280-9d9a-11ea-9b4c-d44f0d352cae.png)
 
-# 	* [Return to the Master Branch (again)]()
+# 	* [Return to the Master Branch (again)](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - The css branch let us create and test our formatting without threatening the stability of the **master branch**. But, new we need to merge these changes into the main project. Before we attempt the merge, we need to return to the master branch.
 
@@ -444,7 +444,7 @@ $ git log --oneline
 
 - As expected, there is no mention of the CSS addition in the history of master, but we are about to change that.
 
-# 	* [Merge the CSS Branch]()
+# 	* [Merge the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - Use the git **merge** command to take the snapshots from the **css** branch and add them to the **master** branch.
 
@@ -457,7 +457,7 @@ $ git log --oneline
 - After the merge, both branches have the exact same history, which makes them redundant.
 - Unless we wanted to keep developing on the css branch, we are free to get rid of it.
 
-# 	* [Delete the CSS Branch]()
+# 	* [Delete the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 - We can safely delete a branch by passing the -d flag to git branch.
 
@@ -480,7 +480,7 @@ $ git branch
 - Deleting branches is a relatively **"safe"** operation in the sense that Git will warn you if you are deleting a unmerged branch.
 - This is just another example of Git's commitment to never losing your work.
 
-# 	* [Conclusion]()
+# 	* [Conclusion](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 This module used two branches to experiment with new additions. In both cases, branches gave us an environment that was completely isolated from the **"Stable"** version of our website (the master branch). One of our experiments is waiting for us in the next module, while our CSS changes have been merged into the stable project, and its branch is thus obsolete. Using branches to develop small features like these is one of the hall-marks of Git-based software management.
 
@@ -488,15 +488,41 @@ While this module relied heavily on branch diagrams to show the complete state o
 
 Next, we will practice our branch management skills by examining the typical workflow of veteran Git users. We will also discover more complicated merges than the **fast-forward merge** introduced above.
 
-# 	* [Quick Reference]()
+# 	* [Quick Reference](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 ```console
 $ git branch
-$ git branch branchName
-$ git checkout branchName
-$ git merge branchName
-$ git branch -d brachName
-$ git rm fileName
 ```
 
+List all branches.
+
+```console
+$ git branch branchName
+```
+
+Create a new branch using the current working directory as its base.
+
+```console
+git checkout <branchName>
+```
+
+Make the working directory and the HEAD match the specified branch.
+
+```consoole
+git merge <brachName>
+```
+
+Merge a branch into the checked-out branch.
+
+```console
+$ git branch -d <brachName>
+```
+
+Delete branchName
+
+```console
+$ git rm <fileName>
+```
+
+Remove a file from the working directory (if applicable) and stop tracking the file.
 
