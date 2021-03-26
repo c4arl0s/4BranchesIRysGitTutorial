@@ -45,7 +45,7 @@ $ git branch
 ```
 
 This will display our one and only branch: `* master`.
-The master branch is Git's default branch, and the asterisk next to it tell us that it is currently checked out.
+**The master branch is Git's default branch, and the asterisk next to it tell us that it is currently checked out**.
 This means that the most recent snapshot in the master branch resides in the working directory.
 
 ![Screen Shot 2020-05-23 at 8 09 49](https://user-images.githubusercontent.com/24994818/82731472-cde7bf80-9ccc-11ea-9029-32deb45c901f.png)
@@ -80,7 +80,7 @@ HEAD detached at 12e24f0
 nothing to commit, working tree clean
 ```
 
-This means the red circle in each of our history diagrams actually represents Git's HEAD.
+**This means the red circle in each of our history diagrams actually represents Git's HEAD**.
 The following figure shows the state of our repository before and after we checked out and old commit.
 
 ![Screen Shot 2020-05-23 at 8 25 18](https://user-images.githubusercontent.com/24994818/82731820-f7094f80-9cce-11ea-99d3-31959c7ce556.png)
@@ -121,7 +121,7 @@ $ git checkout crazy
 Switched to branch 'crazy'
 ```
 
-We are now free to experiment in the working directory without disturbing anything in the master branch.
+**We are now free to experiment in the working directory without disturbing anything in the master branch**.
 The crazy branch is a completely isolated development environment that can be visualized as the following:
 
 ![Screen Shot 2020-05-23 at 8 47 17](https://user-images.githubusercontent.com/24994818/82732309-08a02680-9cd2-11ea-9a98-de50000acc64.png)
@@ -222,7 +222,7 @@ That is to say, the crazy history spans all the way back to the first commit.
 ![Screen Shot 2020-05-23 at 9 08 05](https://user-images.githubusercontent.com/24994818/82732774-f07dd680-9cd4-11ea-8454-50261fc15be0.png)
 
 The project as a whole now has a complex history, however, each individual branch still has a linear history (snapshots occur one after another).
-This means that we can interact with branches in the exact same way as we learned in the first two modules.
+**This means that we can interact with branches in the exact same way as we learned in the first two modules**.
 
 # 	* [Rename the Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
@@ -230,7 +230,7 @@ Let's add one more snapshot to the crazy branch.
 Rename crazy.html to rainbow.html.: 
 
 ```console
-mv crazy.html rainbow.html
+$ mv crazy.html rainbow.html
 ```
 
 Then use the following Git commands to update the repository
@@ -269,7 +269,7 @@ Changes to be committed:
 	renamed:    crazy.html -> rainbow.html
 ```
 
-The renamed: crazy.html -> rainbow.html message in the final status output show us that Git is smart enough to figure out when we are renaming a file.
+**The renamed: crazy.html -> rainbow.html message in the final status output show us that Git is smart enough to figure out when we are renaming a file**.
 
 Our snapshot is staged and ready to be commited:
 
@@ -293,7 +293,7 @@ After this addition, our complete repository history looks like the following
 
 ![Screen Shot 2020-05-23 at 11 01 37](https://user-images.githubusercontent.com/24994818/82735083-cc29f600-9ce4-11ea-89b2-22cc74585e12.png)
 
-Remember that the crazy branch does not include any commits in master after the fork.
+**Remember that the crazy branch does not include any commits in master after the fork**.
 	
 # 	* [Return to the Master Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
@@ -313,7 +313,7 @@ $ git log --oneline
 6a442fc Create index page for the message
 ```
 
-After the checkout, crazy.html does not exist in the working directory, and the commits from the last few steps don't appear in the history. These two branches became completely independent development environment after they forked.
+After the checkout, crazy.html does not exist in the working directory, and the commits from the last few steps don't appear in the history. **These two branches became completely independent development environment after they forked**.
 You can think of them as separate project folders that you switch between with git checkout.
 They do, however, share their first four commits.
 
@@ -330,14 +330,14 @@ Let's create and check out a new branch called css.
 $ git branch css
 ```
 
-switch to css branch
+Switch to css branch
 
-```cosnsole
+```console
 $ git checkout css
 Switched to branch 'css'
 ```
 
-The new branch points to the currently checked out snapshot, which happens to coincide with the master branch
+**The new branch points to the currently checked out snapshot, which happens to coincide with the master branch**.
 
 ![Screen Shot 2020-05-24 at 8 44 44](https://user-images.githubusercontent.com/24994818/82755691-e1f9f280-9d9a-11ea-9b4c-d44f0d352cae.png)
 
@@ -417,11 +417,11 @@ $ git log --oneline
 
 This results in a repository history looks like:
 
-![Screen Shot 2020-05-24 at 8 44 44](https://user-images.githubusercontent.com/24994818/82755691-e1f9f280-9d9a-11ea-9b4c-d44f0d352cae.png)
+![Screen Shot 2021-03-26 at 12 24 51](https://user-images.githubusercontent.com/24994818/112676741-6d666900-8e2e-11eb-8f0d-93b825ca4d2c.png)
 
 # 	* [Return to the Master Branch (again)](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
-The css branch let us create and test our formatting without threatening the stability of the master branch. But, new we need to merge these changes into the main project. Before we attempt the merge, we need to return to the master branch.
+**The css branch let us create and test our formatting without threatening the stability of the master branch**. But, new we need to merge these changes into the main project. Before we attempt the merge, we need to return to the master branch.
 
 ```console
 $ git checkout master
@@ -461,7 +461,7 @@ Unless we wanted to keep developing on the css branch, we are free to get rid of
 
 # 	* [Delete the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
-We can safely delete a branch by passing the -d flag to git branch.
+**We can safely delete a branch by passing the -d flag to git branch**.
 
 ```console
 $ git branch -d css
