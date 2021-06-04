@@ -2,22 +2,22 @@
 
 # [4 Branches I Rys Git Tutorial - Content](https://github.com/c4arl0s/4BranchesIRysGitTutorial#go-back-to-content)
 
- * [View existing Branches](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-view-existing-branches)
- * [Checkout the Crazy Experiment](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-checkout-the-crazy-experiment)
- * [Create a New Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-create-a-new-branch)
- * [Make a Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-make-a-rainbow)
- * [Stage and Commit the Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-stage-and-commit-the-rainbow)
- * [Rename the Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-rename-the-rainbow)
- * [Return to the Master Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-return-to-the-master-branch)
- * [Create a CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-create-a-css-branch)
- * [Add a CSS Stylesheet](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-add-a-css-stylesheet)
- * [Link the Stylesheet](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-link-the-stylesheet)
- * [Return to the Master Branch (again)](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-return-to-the-master-branch-again)
- * [Merge the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-merge-the-css-branch)
- * [Delete the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-delete-the-css-branch)
- * [Conclusion](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-conclusion)
- * [Quick Reference](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-quick-reference)
-
+1. [x] [1. View existing Branches](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-view-existing-branches)
+2. [x] [2. Checkout the Crazy Experiment](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-checkout-the-crazy-experiment)
+3. [x] [3. Create a New Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-create-a-new-branch)
+4. [x] [4. Make a Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-make-a-rainbow)
+5. [x] [5. Stage and Commit the Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-stage-and-commit-the-rainbow)
+6. [x] [6. Rename the Rainbow](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-rename-the-rainbow)
+7. [x] [7. Return to the Master Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-return-to-the-master-branch)
+8. [x] [8. Create a CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-create-a-css-branch)
+9. [x] [9. Add a CSS Stylesheet](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-add-a-css-stylesheet)
+10. [x] [10. Link the Stylesheet](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-link-the-stylesheet)
+11. [x] [11. Return to the Master Branch (again)](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-return-to-the-master-branch-again)
+12. [x] [12. Merge the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-merge-the-css-branch)
+13. [x] [13. Delete the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-delete-the-css-branch)
+14. [x] [14. Conclusion](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-conclusion)
+15. [x] [15. Quick Reference](https://github.com/c4arl0s/4BranchesIRysGitTutorial#-quick-reference)
+ 
 # [4 Branches I Rys Git Tutorial](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 Branches are the final component of Git version control.
