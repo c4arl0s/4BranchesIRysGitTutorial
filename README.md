@@ -536,3 +536,8 @@ $ git rm <fileName>
 
 Remove a file from the working directory (if applicable) and stop tracking the file.
 
+```console
+$ git push origin --delete <remote-branch-to-remove>
+```
+
+This flag allows you to delete a remote branch. (--delete)
