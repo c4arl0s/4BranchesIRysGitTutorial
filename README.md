@@ -450,14 +450,22 @@ As expected, there is no mention of the CSS addition in the history of master, b
 
 Use the git merge command to take the snapshots from the css branch and add them to the master branch.
 
+```console
+$ git merge css
+```
+
+Notice that this command always merges into the current branch: `css` remains unchanged. Check the history to make sure that the css history has been added to `master`.
+
+```console
+$ git log --oneline
+```
+
 ![Screen Shot 2020-05-24 at 9 38 10](https://user-images.githubusercontent.com/24994818/82756851-508e7e80-9da2-11ea-8c28-66833b9b5a21.png)
 
-Instead of re-creating the commits in css and adding them to the history of master, Git reuses the existing snapshots and simply moves the tip of master to match the tip of css.
-**This kind of merge is called a fast-forward merge, since Git is "fast-forwarding" through the new commits in the css branch**.
+Instead of re-creating the commits in css and adding them to the history of master, Git reuses the existing snapshots and simply moves the tip of master to match the tip of css. **This kind of merge is called a fast-forward merge, since Git is "fast-forwarding" through the new commits in the css branch**.
 
 
-After the merge, both branches have the exact same history, which makes them redundant.
-Unless we wanted to keep developing on the css branch, we are free to get rid of it.
+After the merge, both branches have the exact same history, which makes them redundant. Unless we wanted to keep developing on the css branch, we are free to get rid of it.
 
 # 	* [Delete the CSS Branch](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
