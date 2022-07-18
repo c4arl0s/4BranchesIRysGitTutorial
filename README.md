@@ -537,6 +537,12 @@ $ git rm <fileName>
 Remove a file from the working directory (if applicable) and stop tracking the file.
 
 ```console
+$ git rm -r <directoryName>
+```
+
+Remove a directory from the working directory and content. Stop tracking the directory and files.
+
+```console
 $ git push origin --delete <remote-branch-to-remove>
 ```
 
